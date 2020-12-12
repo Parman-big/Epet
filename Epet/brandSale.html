@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/brandSale.css">
+</head>
+
+<body>
+  <div class="list">
+    <img src="images/brand.jpg">
+    <div class="bootom-list">
+      <ul class="nav">
+        <li class="active">
+          <i></i>
+          <div>
+            <h4>主粮</h4>
+            <p>日常饮食 基础营养</p>
+          </div>
+          <span></span>
+        </li>
+        <li>
+          <i></i>
+          <div>
+            <h4>零食</h4>
+            <p>磨牙洁齿 科学训练</p>
+          </div>
+          <span></span>
+        </li>
+        <li>
+          <i></i>
+          <div>
+            <h4>医疗保健</h4>
+            <p>身心健康 保驾护航</p>
+          </div>
+          <span></span>
+        </li>
+        <li>
+          <i></i>
+          <div>
+            <h4>玩具日用</h4>
+            <p>品质生活 快乐一生</p>
+          </div>
+          <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="items">
+      <div class="item">
+        <div class="title">
+          <img src="images/bg1.png">
+        </div>
+        <ul class="info"></ul>
+      </div>
+      <div class="item">
+        <div class="title">
+          <img src="images/bg2.png">
+        </div>
+        <ul class="info"></ul>
+      </div>
+      <div class="item">
+        <div class="title">
+          <img src="images/bg3.png">
+        </div>
+        <ul class="info"></ul>
+      </div>
+      <div class="item">
+        <div class="title">
+          <img src="images/bg4.png">
+        </div>
+        <ul class="info"></ul>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/axios.min.js"></script>
+  <script>
+    function getData(id) {
+      var str = '';
+      axios.get('http://localhost:3000/brand/' + id).then((res) => {
+        console.log(res.data);
+        res.data.forEach((item, index) => {
+          str += `
+          <li>
+            <a href="${item.title_url}">
+              <img src="${item.img}">
+              <div class="time">
+                <img src="images/textbg3.png">
+                <span>${item.title}</span>
+              </div>
+            </a>
+          </li>
+        `
+        })
+        document.querySelectorAll('.info')[id - 1].innerHTML = str
+      }).catch((err) => {
+        console.log(err);
+      })
+    }
+
+    var info = document.querySelectorAll('.info');
+    info.forEach((item, index) => {
+      getData(index + 1);
+    })
+
+    var lis = document.querySelectorAll('.nav li');
+    lis.forEach((item, index) => {
+      item.onclick = function () {
+        for (var i = 0; i < lis.length; i++) {
+          lis[i].classList.remove("active")
+        }
+        this.classList.add('active');
+      }
+    })
+  </script>
+</body>
+
+</html>

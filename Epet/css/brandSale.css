@@ -1,0 +1,153 @@
+.list {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bootom-list {
+  width: 100%;
+  min-width: 1200px;
+  height: 73px;
+  background: rgba(255, 255, 255, .9);
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav {
+  width: 1300px;
+  height: 73px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav li {
+  width: 290px;
+  height: 100%;
+  line-height: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid transparent;
+}
+
+.nav li:hover {
+  background: #c8c8c8;
+}
+
+.nav li:hover span {
+  display: none;
+}
+
+.nav .active {
+  border-bottom: 3px solid #c8c8c8;
+}
+
+.nav li i {
+  font-style: normal;
+  width: 40px;
+  height: 47px;
+  display: inline-block;
+  margin-right: 15px;
+  background: url('../images/new_nav_ico.png') no-repeat center center;
+}
+
+.nav li i:nth-of-type(1) {
+  background-position: -4px -3px;
+}
+
+.nav li i:nth-of-type(1) {
+  background-position: -4px -218px;
+}
+
+.nav li i:nth-of-type(1) {
+  background-position: -4px -58px;
+}
+
+.nav li i:nth-of-type(1) {
+  background-position: -4px -117px;
+}
+
+.nav li h4 {
+  font-size: 18px;
+}
+
+.nav li p {
+  color: #666;
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.nav li span {
+  position: absolute;
+  right: -1px;
+  top: 15px;
+  width: 1px;
+  height: 40px;
+  background: #c8c8c8;
+}
+
+.items {
+  width: 1020px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.item {
+  padding-top: 30px;
+}
+
+.item .title {
+  height: 90px;
+  line-height: 90px;
+  padding-top: 20px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info li {
+  width: 500px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.info li:nth-of-type(n) {
+  margin-right: 10px;
+}
+
+.info li a{
+  display: block;
+}
+
+.info li img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.info li .time {
+  display: block;
+  line-height: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.info li .time span {
+  position: absolute;
+  top: 0;
+  left: 21px;
+}
