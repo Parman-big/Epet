@@ -1,0 +1,177 @@
+body {
+  font: 12px 'Microsoft Yahei', Tahoma, Simsun;
+}
+
+.car {
+  width: 1200px;
+  margin: 50px auto 0;
+}
+
+.car-top {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-top>.top-left {
+  display: flex;
+  align-items: center;
+}
+
+.car-top>.top-left>img {
+  width: 127px;
+}
+
+.car-top>.top-left>h2 {
+  margin-left: 10px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.search {
+  border: 2px solid #459d36;
+  width: 325px;
+  height: 28px;
+  line-height: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search>input {
+  width: 260px;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+  height: 28px;
+}
+
+.search>button {
+  border: none;
+  outline: none;
+  background: #459d36;
+  display: block;
+  width: 50px;
+  color: #fff;
+}
+
+.search>button:hover {
+  color: #daf5d9;
+  cursor: pointer;
+}
+
+#car-menu {
+  position: relative;
+  margin-top: 30px;
+  border-bottom: 2px #ddd solid;
+}
+
+#car-menu>.nav-current {
+  transition: all .3s;
+  position: absolute;
+  bottom: -2px;
+  height: 6px;
+  border-bottom: 2px solid #ff6000;
+  width: 176px;
+  left: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#car-menu>.nav-current>.arrow {
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 100%;
+}
+
+#car-menu>.nav-current>.arrow>i {
+  border-style: dotted solid solid solid;
+  border-color: transparent transparent #ff6000 transparent;
+  border-width: 5px;
+  font-size: 0;
+  line-height: 0;
+}
+
+.car-menu {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.car-menu>li {
+  font-size: 16px;
+  border-right: 1px solid #e8e8e8;
+  padding: 0 30px;
+  color: #3c3c3c;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+
+.car-menu>li:hover {
+  color: #ff6000;
+}
+
+.car-menu>li>span {
+  background: url('../images/newtips.png') no-repeat 0 0;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.car-menu>li>em {
+  margin-left: 5px;
+  color: #ff6000;
+}
+
+.fct {
+  text-align: center;
+}
+
+.null-shopcart {
+  background: url('../images/null-cart.png') no-repeat;
+  padding-left: 155px;
+  padding-top: 30px;
+  margin: 100px 0;
+  display: inline-block;
+  font-family: "Microsoft Yahei", tahoma, arial;
+}
+
+.null-shopcart>h2 {
+  color: #999;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.null-shopcart>.btn {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.null-shopcart>.btn>a {
+  text-decoration: none;
+  color: #444;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  height: 35px;
+  line-height: 35px;
+  background: #4bad07;
+  border: 1px solid #55a71e;
+  border-radius: 3px;
+  padding-right: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.null-shopcart>.btn>a>span {
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  background-position: 0 -355px;
+  padding-left: 20px;
+  color: #FFF;
+}
