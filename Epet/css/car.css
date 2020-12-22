@@ -33,13 +33,13 @@ body {
 .search {
   border: 2px solid #459d36;
   width: 325px;
-  height: 28px;
   line-height: 28px;
   display: flex;
   justify-content: space-between;
 }
 
 .search>input {
+  padding: 2px 0;
   width: 260px;
   border: none;
   outline: none;
@@ -174,4 +174,137 @@ body {
   background-position: 0 -355px;
   padding-left: 20px;
   color: #FFF;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  empty-cells: show;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+td {
+  padding: 10px;
+  background: #fcfcfc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.img {
+  width: 87px;
+  height: 87px;
+  float: left;
+  border: 1px solid #e8e8e8;
+}
+
+.txt {
+  float: left;
+  margin-top: 30px;
+  width: 310px;
+  margin-left: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #cacbcb;
+  display: inline-block;
+}
+
+.btn button {
+  height: 22px;
+  line-height: 22px;
+  padding: 0 3px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+
+.btn input {
+  text-align: center;
+  padding: 0;
+  border: 0;
+  border-right: 1px solid #cacbcb;
+  border-left: 1px solid #cacbcb;
+  width: 43px;
+  height: 20px;
+}
+
+.btn~p {
+  color: #333;
+  margin: 3px 0;
+}
+
+.img img {
+  width: 80px;
+  height: 80px;
+}
+
+tr {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.title {
+  text-align: left;
+  padding-left: 5px;
+}
+
+.title span {
+  border-radius: 3px;
+  padding: 3px 6px 4px 23px;
+  background: url('../images/fh-ico.png') no-repeat 0 -55px #6acd34;
+  margin-left: 15px;
+}
+
+.none {
+  border: none;
+}
+
+.none td {
+  border: none;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.balance {
+  width: 1200px;
+  margin: 0 auto;
+  height: 62px;
+  line-height: 62px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.all-right strong,.all-right>span{
+  font-size: 18px;
+  color: #e61212;
+}
+.all-right button{
+  margin-left: 10px;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 213px;
+  display: inline-block;
+  background: #b1b1b1;
+  border-radius: 5px;
+  color: #fff;
 }
