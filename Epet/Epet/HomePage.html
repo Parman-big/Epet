@@ -7,12 +7,44 @@
     <title>【E宠商城】官网，精选全球宠物用品，品质养宠，尽在E宠</title>
     <link rel="shortcut icon" href="./images/home-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/HomePage.min.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2265633_m3ejs2o4h9.css">
+    <!-- <link rel="stylesheet" href="./css/HomePage.min.css"> -->
+    <link rel="stylesheet" href="./css/HomePage.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2265633_4nz8ypg8h9g.css">
+    <link rel="stylesheet" href="./css/register.css">
 
 </head>
 
+
 <body>
+    <!-- 登录框 -->
+    <div class="register">
+        <div class="log">
+            <p>
+                <span>手机验证码登录</span>
+                <span class="ca">|</span>
+                <span class="cs">账户登录</span>
+            </p>
+            <div class="ipt">
+                <input type="text" placeholder="请输入手机号/账号" id="shop">
+                <span><i class="iconfont icon-renyuan"></i></span>
+            </div>
+            <div class="ipt" >
+                <input type="password" placeholder="请输入密码" id="psd">
+                <span><i class="iconfont icon-ai241"></i></span>
+                <div class="tiem">
+                    忘记密码
+                </div>
+            </div>
+            <button id="but">登录</button>
+            <div class="enroll">
+                <div class="en-left"><img src="./images/newico2.png" alt=""></div>
+                <div class="en-right">
+                    <a href="#" class="en-a">手机快速注册</a>
+                    <a href="#">遇到问题？</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="home-top-header">
         <div class="np-nav">
             <div id="home-top">
@@ -34,8 +66,10 @@
                     <p class="p1">E宠就是正品</p>
                 </div>
                 <ul class="right">
-                    <li class="telephone">176****0839</li>
-                    <li class="quit color3">[退出]</li>
+                    <!-- <li class="telephone">176****0839</li>
+                    <li class="quit color3">[退出]</li> -->
+                    <li class="telephone color3" id="log">[登录]</li>
+                    <li class="quit color3">[注册]</li>
                     <li class="news color3">
                         <span> </span> 新消息
                         <div class="news-show">
@@ -65,7 +99,7 @@
                         </div>
                     </li>
                     <li class="shopping color3"><span class="iconf-car"></span> 购物车(0 <span class="num4">0</span> )</li>
-                    <li class="mypet ">
+                    <li class="mypet " id="mypet">
                         <span class="ifon-tou"></span>
                         <p class="mypet-text"> 我的E宠</p>
                         <span class="ciala icon-sanjiao iconfont"></span>
@@ -77,7 +111,7 @@
                             <p class="item"><span></span>VIP俱乐部</p>
                         </div>
                     </li>
-                    <li class="collect"> 
+                    <li class="collect">
                         <span class="ifon-tou"></span>收藏 <span class="ciala icon-sanjiao iconfont"></span>
                         <div class="collect-show">
                             <p>

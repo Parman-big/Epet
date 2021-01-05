@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.register{
+    position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    right: 0;   
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.log{
+    position: relative;
+    margin: auto ;
+    margin-top: 180px;
+    padding:0 50px;
+    width: 430px;
+    height: 420px;
+    background: #fff;
+    border-radius: 20px;
+}
+.log p {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 40px 0;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    line-height: 30px;
+}
+.log p .ca{
+    display: inline-block;
+    padding: 0 20px;
+    color: #ccc;
+}
+.log p .cs{
+    color: #f03e3e;
+}
+.log .ipt{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin: 20px auto;
+    border: 1px solid #dddddd;
+    line-height: 40px;
+    border-radius: 30px;
+}
+.log input{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    height: 20px;
+    outline: none;
+    border: 0;
+   
+
+}
+.log .ipt span {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    line-height:20px ;
+    text-align: center;
+    border-right: 1px solid #e7e7e7;
+}
+.log .ipt span  i {
+    display: block;
+    margin-right: 5px;
+    color: #e7e7e7;
+    font-size: 20px;
+}
+.log .ipt  .tiem {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 85px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #999;
+    border-left: 1px solid #e7e7e7;
+}
+.log #but {
+    width: 300px;
+    height: 40px;
+    margin-left: 15px;
+    outline: none;
+    border: 1px solid #dddddd;
+    background-color: #999;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.log .enroll {
+    width: 300px;
+    height: 40px;
+    margin: 40px auto;
+}
+.log .enroll  .en-left {
+    float: left;
+    height: 100%;
+}
+.log .enroll .en-right{
+    float: right;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: right;
+    color: #999;
+}
+.log .enroll .en-right .en-a {
+    color: #444;
+}
